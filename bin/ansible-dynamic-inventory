@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+use Kkkw\AnsibleDynamicInventoryApplication;
+
+require __DIR__.'/../src/vendor/autoload.php';
+
+$app = new AnsibleDynamicInventoryApplication('Ansible Dynamic Inventory', '0.2.1');
+$app->run();

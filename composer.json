@@ -1,0 +1,21 @@
+{
+    "name": "kkkw/ansible-dynamic-inventory",
+    "require": {
+        "illuminate/console": "v4.0.10"
+    },
+    "authors": [
+        {
+            "name": "kkkw",
+            "email": "kikukawa.the.3rd@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-0": {
+        "Kkkw": "src/"
+      }
+    },
+    "config": {
+      "bin-dir": "bin",
+      "vendor-dir": "src/vendor"
+    }
+}

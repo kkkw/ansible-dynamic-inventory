@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ruleset name="AnsibleDynamicInventory">
+ <description>PHP coding standard in AnsibleDynamicInventory</description>
+ <ini name="memory_limit" value="64M"/>
+
+ <!--
+    file指定のデフォルト。どうしようかなー
+    <file>./path/to/directory</file>
+    <file>./path/to/file.php</file>
+ -->
+
+ <!--
+    除外する項目
+    ctpは諦める
+    jsやcssもできるけど対象外とする
+    その他いらない箇所を設定する
+ -->
+ <exclude-pattern>*/vendor/*</exclude-pattern>
+
+ <!--
+ デフォルトルールとしてPSR2を指定する
+ phpのバージョンや既存ソースであまりにも多いものをここで除外する。
+ ここの除外が全てなくなったら完成
+ -->
+ <rule ref="PSR2">
+   <!--php5.4以上では短い配列の定義を使用すること-->
+   <exclude name="Generic.Arrays.DisallowLongArraySyntax" />
+ </rule>
+
+ <!-- All rules in ./Sniffs are included automatically -->
+</ruleset>
